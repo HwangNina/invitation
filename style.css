@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Gamja Flower', cursive;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    background: #EBC3D6;
+    background: -webkit-radial-gradient(top left, #EBC3D6, #F4F59E);
+    background: -moz-radial-gradient(top left, #EBC3D6, #F4F59E);
+    background: radial-gradient(to bottom right, #EBC3D6, #F4F59E);
+}
+
+body {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    text-align: center;
+}
+
+
+button {
+    padding: 0.3rem 1rem;
+    font-size: 1.6rem;
+    background-color: white;
+    color:cadetblue;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:focus{
+    outline:none;
+}
+
+button:hover{
+    background-color:#d4f6fc;
+}
+
+.msg {
+    padding: 30px 0;
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(1rem);
+      -webkit-transform: translateY(1rem);
+    }
+  
+    100% {
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+    }
+  }
+
+.modal_none {
+    display: none;
+}
+
+.modal_show {
+    background-color: rgba(255, 204, 204,0.8);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    width: 80vw;
+    height: 50vh;
+    align-items: center;
+    padding: 10%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index:2222;
+
+}
+
+.mainCheck {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.name {
+    width: 40vw;
+    height: 50px;
+    margin: 0 8px;
+}
+
+.inputBtn{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.selfCheck{
+    font-size: 20px;
+    width: 20vw;
+}
